@@ -8,7 +8,7 @@
 
 Tested on:
 
-[![VSCode Version](https://img.shields.io/badge/VSCode%20Version-insiders%20/%20stable%20/%20v1.67.0%20/%20web-brightgreen)](https://github.com/webdriverio-community/wdio-vscode-service/actions/workflows/ci.yml) [![CI Status](https://img.shields.io/badge/Platform-windows%20%2F%20macos%20%2F%20ubuntu-brightgreen)](https://github.com/webdriverio-community/wdio-vscode-service/actions/workflows/ci.yml)
+[![VSCode Version](https://img.shields.io/badge/VSCode%20Version-insiders%20/%20stable%20/%20v1.78.0%20/%20web-brightgreen)](https://github.com/webdriverio-community/wdio-vscode-service/actions/workflows/ci.yml) [![CI Status](https://img.shields.io/badge/Platform-windows%20%2F%20macos%20%2F%20ubuntu-brightgreen)](https://github.com/webdriverio-community/wdio-vscode-service/actions/workflows/ci.yml)
 
 > WebdriverIO service for testing VSCode extensions.
 
@@ -167,6 +167,16 @@ Type: `string`
 #### `extensionPath`
 
 Define the directory to the extension you want to test.
+
+Type: `string`
+
+#### `storagePath`
+
+Define a custom location for VS Code to store all its data. This is the root for internal VS Code directories such as (partial list)
+* **user-data-dir**: The directory where all the user settings (global settings), extension logs etc are stored.
+* **extension-install-dir**: The directory where VS Code extensions are installed.
+
+If not provided, a temporary directory is used.
 
 Type: `string`
 
